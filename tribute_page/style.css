@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #B2945B;    /* Blue */
+    --secondary-color: #F08C00;  /* Orange */
+    --accent-color: #4CAF50;     /* Green */
+    --background-color: #cae2eb; /* Light Gray */
+    --text-color: #333;          /* Dark Gray */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color:93C48B;
+    text-align: center;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    position:relative;
+    left:10rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #bdc3c7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    padding: 1rem;
+    border-left: 4px solid var(--accent-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container section {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
